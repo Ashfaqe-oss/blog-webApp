@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daily Journal</title>
+    <meta charset="utf-8">
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- css styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">DAILY JOURNAL</p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- 6 -->
+                <li id="home"><a href="/">HOME</a></li>
+                <li id="about"><a href="/about">ABOUT US</a></li>
+                <li id="contact"><a href="/contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container">
+
+            <h1>Compose</h1>
+            <div class="">
+
+                <form class="blgname" action="/" method="POST">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Title</span>
+                        </div>
+                        <input type="text" name="blogTitle" size="73" class="form-control" id="basic-url" aria-describedby="basic-addon3" autofocus autocomplete="off">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group">
+                            <span class="input-group-text">Post</span>
+                        </div>
+                        <textarea class="form-control" name="blogBody" rows="5" cols="77" aria-label="With textarea-lg" placeholder="type in whatever you feel and expand how much ever you need"></textarea>
+                    </div>
+                    <button class="create btn btn-outline-info" type="submit">Create</button>
+                </form>
+
+            </div>
+
+
+            <%- include("partials/footer") -%>
