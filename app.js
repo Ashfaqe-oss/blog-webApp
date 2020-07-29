@@ -66,7 +66,10 @@ app.get("/posts/:postName", function(req, res) {
     });
 });
 
-
-app.listen(process.env.PORT, function() {
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
+app.listen(port, function() {
     console.log("server is up and running on port 3000");
 });
